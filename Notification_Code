@@ -1,0 +1,17 @@
+from plyer import notification
+import time, webbrowser
+total_breaks = 2
+break_count = 0
+i=0
+while i<3 and break_count<total_breaks:
+    notification.notify(title = 'Lets Have a Break !!',
+                    message = 'Close your eyes and feel the music. Take deep breath in and Breath Out for 10 times',
+                    app_icon = 'mind.ico',
+                    timeout = 60 )
+    time.sleep(3)
+    webbrowser.open("https://www.youtube.com/embed/9uIk_91GQYI")
+    break_count = break_count + 1
+    i=i+1
+
+
+#This was code to deploy notification system to Our Model . 
